@@ -1,0 +1,6 @@
+{
+  "name": "vite-plugin--material-ui",
+  "version": "1.0.1",
+  "description": "Vite @material-ui plugin",
+  "main": "src/index.js"
+}

@@ -1,14 +1,22 @@
-// @ts-check
-const reactPlugin = require("vite-plugin-react");
-
-/**
- * @type { import('vite').UserConfig }
- */
 const config = {
+  alias: {
+    "react-is": `@esm-bundle/react-is`,
+  },
   jsx: "react",
-  plugins: [reactPlugin],
+  plugins: [
+    require(`vite-plugin-react`),
+    require(`./vite-plugin--babel-runtime`),
+    require(`./vite-plugin--material-ui`),
+  ],
   optimizeDeps: {
     exclude: ["@vrm/screens"],
+    include: [
+      `prop-types`,
+      `@material-ui/core`,
+      `@material-ui/icons`,
+      `hoist-non-react-statics`,
+      `shallowequal`,
+    ],
   },
 };
 

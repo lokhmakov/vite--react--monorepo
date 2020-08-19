@@ -2,6 +2,7 @@
   "name": "@vrm/screens",
   "main": "src/index.jsx",
   "version": "0.0.1",
+  "license": "Unlicense",
   "dependencies": {
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1"

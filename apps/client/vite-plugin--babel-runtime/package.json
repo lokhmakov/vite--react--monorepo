@@ -1,0 +1,6 @@
+{
+  "name": "vite-plugin--babel-runtime",
+  "version": "1.0.1",
+  "description": "Vite @babel/runtime plugin",
+  "main": "src/index.js"
+}
